@@ -2459,7 +2459,7 @@ def beenden() -> None:
     else:
         # Bestelldaten in CSV-Dateien speichern
         Restaurant.bestellungen_df.to_csv('./data/Bestelldaten_offen.csv')
-        Restaurant.bestellungen_df.to_csv('./data/Bestelldaten_geschlossen.csv')
+        Restaurant.bestellungen_geschlossen_df('./data/Bestelldaten_geschlossen.csv')
 
         # Informationsmeldung anzeigen und Programm beenden
         messagebox.showinfo('Speichern...', 'Datenbanken gesichert\nZum Beenden klicken')
